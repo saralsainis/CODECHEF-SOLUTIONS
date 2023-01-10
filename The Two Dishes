@@ -1,0 +1,40 @@
+Problem
+Chef prepared two dishes yesterday. Chef had assigned the \textbf{tastiness}tastiness T_1T1 and T_2T2 to the first and to the second dish respectively. The tastiness of the dishes can be any \textbf{integer}integer between 00 and NN (both inclusive).
+
+Unfortunately, Chef has forgotten the values of T_1T1 and T_2T2 that he had assigned to the dishes. However, he remembers the sum of the tastiness of both the dishes - denoted by SS.
+
+Chef wonders, what can be the maximum possible absolute difference between the tastiness of the two dishes. Can you help the Chef in finding the maximum absolute difference?
+
+It is guaranteed that at least one pair \{T_1, T_2\}{T1,T2} exist such that T_1 + T_2 = S, 0 \leq T_1, T_2 \leq NT1+T2=S,0≤T1,T2≤N.
+
+Input Format
+The first line of input contains a single integer TT, denoting the number of testcases. The description of the TT testcases follows.
+The first and only line of each test case contains two space-separated integers NN, SS, denoting the maximum tastiness and the sum of tastiness of the two dishes, respectively.
+Output FormatFor each testcase, output a single line containing the maximum absolute difference between the tastiness of the two dishes.
+
+Constraints
+1 \leq T \leq 10^31≤T≤103
+1 \leq N \leq 10^51≤N≤105
+1 \leq S \leq 2 \cdot 10^51≤S≤2⋅105
+Sample 1:Input
+Output
+3
+3 1
+4 4
+2 3
+
+1
+4
+1
+
+
+
+SOLUTION
+
+
+for i in range(int(input())):
+    n,s=map(int,input().split())
+    if n>s:
+        print(s)
+    else:
+        print(2*n-s)
